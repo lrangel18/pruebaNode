@@ -20,7 +20,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '18.x'
-
+      - run: |
+          pwd
+          ls -la
       - name: npm install, build, and test
         run: |
           npm install
@@ -31,7 +33,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: node-app
-          path: ./2-Deploy-basic-app-to-azure
+          path: .
 
   deploy:
     runs-on: ubuntu-latest
