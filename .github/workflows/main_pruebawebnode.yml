@@ -53,4 +53,4 @@ jobs:
           app-name: 'pruebaWebNode'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5CBD73B30D6440EAACD2F435B8F0F386 }}
-          package: .
+          package: /2-Deploy-basic-app-to-azure/*
