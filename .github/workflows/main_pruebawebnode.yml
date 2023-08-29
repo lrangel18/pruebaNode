@@ -25,6 +25,7 @@ jobs:
           ls -la
       - name: npm install, build, and test
         run: |
+          cd 2-Deploy-basic-app-to-azure
           npm install
           npm run build --if-present
           npm run test --if-present
